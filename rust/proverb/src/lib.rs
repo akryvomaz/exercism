@@ -6,7 +6,10 @@ pub fn build_proverb(list: Vec<&str>) -> String {
 
             let mut previous: &str = first;
             for next in list.iter().skip(1) {
-                result.push_str(&format!("For want of a {} the {} was lost.\n", previous, next));
+                result.push_str(&format!(
+                    "For want of a {} the {} was lost.\n",
+                    previous, next
+                ));
                 previous = next;
             }
 

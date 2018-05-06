@@ -18,7 +18,7 @@ pub fn encode(number: u64) -> String {
                 } else if !hundred.is_empty() {
                     return format!("{} {}", acc, hundred);
                 }
-                
+
                 acc
             }
             _ => {

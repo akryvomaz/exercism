@@ -7,8 +7,8 @@ pub fn find() -> Option<u32> {
         let b: u32 = (tmp - SUM * a) / (SUM - a);
         let c: u32 = SUM - (a + b);
 
-        if a*a + b*b == c*c {
-            return Some(a*b*c);
+        if a * a + b * b == c * c {
+            return Some(a * b * c);
         }
     }
 

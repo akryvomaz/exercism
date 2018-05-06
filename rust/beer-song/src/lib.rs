@@ -10,7 +10,7 @@ pub fn verse(n: i32) -> String {
 pub fn sing(start: i32, end: i32) -> String {
     let mut result = String::from("");
 
-    for i in (end..start+1).rev() {
+    for i in (end..start + 1).rev() {
         result.push_str(&verse(i));
 
         if i != end {
